@@ -65,12 +65,12 @@
 </script>
 
 
-<Drawer placement='bottom' class="bg-[--color-background-offset] border-t border-default flex flex-col justify-end z-[8000]"
-		width='sm:w-1/3 md:w-2/5 xl:w-1/3 w-full max-h-[50vh]' transitionType="fly" backdrop={false} transitionParams={transitionParamsBottom} bind:hidden={drawerHidden} id='chatDrawer'>
-	<div  transition:fade class="{$scrolled ? 'pt-12' : 'pb-12'} sm:py-20 lg:py-24 h-full w-full overflow-hidden flex flex-col">
+<Drawer placement='bottom' class="bg-[--color-background-offset] border-t border-default w-full flex flex-col justify-end z-[8000] max-h-[50vh]"
+		width='w-full' transitionType="fly" backdrop={false} transitionParams={transitionParamsBottom} bind:hidden={drawerHidden} id='chatDrawer'>
+	<div  transition:fade class="h-full w-full overflow-hidden flex flex-col">
 
 		<div class="mt-4 sm:p-6 p-4 border shadow-sm rounded-lg overflow-auto flex flex-col-reverse h-full bg-[--color-background]">
-		  <ul class="text-xs sm:text-md h-36 ">
+		  <ul class="text-xs sm:text-md h-36 sm:h-4/5">
 			{#if !$messages.length}
 				<li class="text-[--color-text-offset] text-opacity-40 text-xs"> 色々聞いてみてください！</li>
 			{/if}
