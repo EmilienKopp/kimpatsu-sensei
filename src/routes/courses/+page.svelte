@@ -86,7 +86,7 @@
     </ShadowButton>
 
     {#await sleep(100) then}   
-        <ul class="text-left w-full flex flex-col sm:gap-12">
+        <ul class="text-left w-full flex flex-col sm:gap-4 2xl:gap-12">
             <li in:fly={{duration: 600, delay: 1500, x: -1500}}>
                 <h3 class="lg:text-2xl text-[--color-text] text-md font-bold mt-10 font-mono block w-fit"> 
                     🌻 {plans.casual.name}: ¥{plans.casual.price}
