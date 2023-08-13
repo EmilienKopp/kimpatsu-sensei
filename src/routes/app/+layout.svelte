@@ -9,11 +9,9 @@
     import { Button } from "flowbite-svelte";
 	import { AngleUpSolid } from "flowbite-svelte-icons";
     import { fade } from "svelte/transition";
-	import { inject } from "@vercel/analytics";
+    import type { PageData } from "./$types";
 
-	export let data;
-
-	inject({mode: dev ? 'development' : 'production'});
+	export let data: PageData;
 
 	let scrollY: number;
 	let main: HTMLElement | null;
@@ -41,9 +39,9 @@
 	});
 </script>
 
-{#if $scrolled}
+<!-- {#if $scrolled}
 <Nav position="top" />
-{/if}
+{/if} -->
 
 <Chat {data} />
 <!-- <main class="scroll-mt-24  mt-12 sm:mt-16 xl:mt-20 2xl:mt-28 h-full overflow-x-hidden bg-[--color-background] text-default text-base selection:bg-secondary selection:text-white"></main> -->
@@ -64,12 +62,6 @@
 	
 </main>
 
-{#if !$scrolled}
+<!-- {#if !$scrolled}
 <Nav position="bottom" />
-{/if}
-
-<!-- <style>
-	* {
-		transition: color 0.3s ease;
-	}
-</style> -->
+{/if} -->

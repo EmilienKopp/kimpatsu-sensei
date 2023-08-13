@@ -13,13 +13,10 @@
 
 <Splash />
 
-<div class="space-y-24 px-8 snap snap-y snap-proximity">
+<!-- <div class="space-y-24 px-8 snap snap-y snap-proximity">
 
-    <Intro />
-    <Services />
-    <Showcase />
-    <Contact />
+
 
 </div>
-<CodeBox />
-<Footer />
+
+<Footer /> -->

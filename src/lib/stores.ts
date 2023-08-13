@@ -12,3 +12,7 @@ export const theme: Writable<"light" | "dark"> = writable("light");
 export const navPosition: Writable<"top" | "bottom"> = writable("bottom");
 
 export const commandsVisible: Writable<boolean> = writable(false);
+
+export const pickedWord: Writable<string> = writable("");
+
+export const language: Writable<"en" | "ja"> = writable("en");
